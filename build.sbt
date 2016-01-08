@@ -3,7 +3,7 @@ import Keys._
 import com.typesafe.sbt.pgp.PgpKeys._
 
 val commonSettings = Seq(
-  organization := "me.chrons",
+  organization := "info.akshaal",
   version := Version.library,
   scalaVersion := "2.11.6",
   scalacOptions ++= Seq("-unchecked", "-feature", "-deprecation", "-encoding", "utf8"),
@@ -30,13 +30,13 @@ lazy val boopickle = crossProject
   .settings(
     name := "boopickle",
     scmInfo := Some(ScmInfo(
-      url("https://github.com/ochrons/boopickle"),
-      "scm:git:git@github.com:ochrons/boopickle.git",
-      Some("scm:git:git@github.com:ochrons/boopickle.git"))),
+      url("https://github.com/akshaal/boopickle"),
+      "scm:git:git@github.com:akshaal/boopickle.git",
+      Some("scm:git:git@github.com:akshaal/boopickle.git"))),
     publishMavenStyle := true,
     publishArtifact in Test := false,
     pomExtra :=
-      <url>https://github.com/ochrons/boopickle</url>
+      <url>https://github.com/akshaal/boopickle</url>
         <licenses>
           <license>
             <name>MIT license</name>
